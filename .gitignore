@@ -1,0 +1,19 @@
+node_modules/
+out/
+trellis-compare/
+lamp/
+figure/
+web/data.old/
+web/data.new/
+__pycache__/
+*.blend
+*.blend1
+# reference images and intermediate meshes stay local
+seated/*.png
+visitor/*.png
+seated/mesh.glb
+seated/painted.glb
+visitor/mesh.glb
+visitor/painted.glb
+_*.js
+_*.py

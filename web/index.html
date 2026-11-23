@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>One dinner</title>
+<style>
+  html, body { margin: 0; height: 100%; background: #05040b; overflow: hidden; }
+  canvas#view { position: fixed; inset: 0; width: 100vw; height: 100vh; display: block;
+    image-rendering: pixelated; image-rendering: crisp-edges; cursor: grab; touch-action: none; }
+  canvas#view:active { cursor: grabbing; }
+  #hud { position: fixed; left: 14px; bottom: 12px; font: 11px/1.5 ui-monospace, Menlo, Consolas, monospace;
+    color: #8a8070; letter-spacing: .02em; pointer-events: none; text-shadow: 0 1px 0 #000; }
+  #hud b { color: #d8cca0; font-weight: 500; }
+  #err { position: fixed; inset: 0; display: none; align-items: center; justify-content: center; padding: 24px;
+    font: 13px/1.6 ui-monospace, Menlo, Consolas, monospace; color: #e6a650; white-space: pre-wrap; }
+</style>
+<script type="importmap">
+{ "imports": { "three": "/node_modules/three/build/three.module.js", "three/addons/": "/node_modules/three/examples/jsm/" } }
+</script>
+</head>
+<body>
+<canvas id="view"></canvas>
+<div id="hud"></div>
+<div id="err"></div>
+<script type="module" src="main.js"></script>
+</body>
+</html>
